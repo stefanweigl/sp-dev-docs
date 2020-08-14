@@ -229,10 +229,10 @@ $url = "https://contoso.sharepoint.com/sites/awesomemodernteamsite"
 $owner = "denisd@contoso.com"
 
 // SharePoint Online Management Shell
-New-SPOSite -Title $_title -Url $_url -Owner $owner -StorageQuota 512 -Template "STS#3"
+New-SPOSite -Title $title -Url $url -Owner $owner -StorageQuota 512 -Template "STS#3"
 
 // PnP
-New-PnPTenantSite -Url $_url -Description $_title -Title $_title -Template STS#3 -Owner $owner
+New-PnPTenantSite -Url $url -Description $title -Title $title -Template STS#3 -Owner $owner
 ```
 
 #### Provision a Microsoft 365 group using the Office 365 CLI
